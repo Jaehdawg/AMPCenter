@@ -6,7 +6,7 @@
   --muted: #596776;
   --line: rgba(24,36,49,0.12);
   --navy: #0f2235;
-  --blue: #1c74c9;
+  --blue: #d63b39;
   --red: #d63b39;
   --yellow: #f0bb2d;
   --green: #3b9d63;
@@ -21,7 +21,7 @@ body {
   font-family: var(--body);
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(28,116,201,.10), transparent 28%),
+    radial-gradient(circle at top left, rgba(214,59,57,.12), transparent 28%),
     radial-gradient(circle at top right, rgba(214,59,57,.08), transparent 22%),
     linear-gradient(180deg, #faf7f1 0%, var(--paper) 100%);
 }
@@ -86,13 +86,20 @@ img { max-width: 100%; display: block; }
 .hero h1, .section h2, .directory-hero-grid h1 {
   margin:0; line-height:.92; letter-spacing:-.05em; font-family: var(--heading); text-transform: uppercase;
 }
-.hero h1 { font-size: clamp(3rem, 7vw, 6rem); max-width: 9ch; }
-.section h2, .directory-hero-grid h1 { font-size: clamp(2.1rem, 4.7vw, 3.8rem); }
+.hero h1 { font-size: clamp(2.55rem, 5.8vw, 4.8rem); max-width: 9ch; }
+.section h2, .directory-hero-grid h1 {
+  font-size: clamp(1.55rem, 3.2vw, 2.6rem);
+  line-height: 1.04;
+  letter-spacing: -.02em;
+  text-transform: none;
+  font-family: var(--body);
+  font-weight: 700;
+}
 .lede, .section-head p, .card p, .quote-card p, .quote-card span, .person-card p, .doc-page p, .doc-page li { line-height:1.65; font-size: 1rem; }
 .lede { max-width: 62ch; margin: 16px 0 0; color: rgba(255,255,255,.84); }
 .hero-actions { display:flex; flex-wrap:wrap; gap: 12px; margin-top: 26px; }
 .button { display:inline-flex; align-items:center; justify-content:center; padding: 13px 18px; border-radius: 999px; font-weight:800; border:1px solid transparent; }
-.button.primary { background:#fff; color:var(--navy); }
+.button.primary { background:var(--red); color:#fff; }
 .button.secondary { color:#fff; background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); }
 .button.secondary.dark { color:var(--navy); background: rgba(255,255,255,.75); border-color: rgba(24,36,49,.12); }
 .hero-panel { padding: 18px; }
@@ -102,6 +109,7 @@ img { max-width: 100%; display: block; }
 .stats-grid span { color: var(--muted); line-height:1.45; }
 .quote-card { margin-top: 12px; padding: 18px; color:#fff; background: linear-gradient(135deg, rgba(15,34,53,.96), rgba(28,116,201,.78)); }
 .quote-card p { margin:0 0 8px; font-family: var(--heading); font-size: 1.2rem; text-transform: uppercase; }
+.section-head h2 { line-height: 1.02; }
 .color-ribbon { display:flex; gap: 10px; margin-top: 32px; }
 .swatch { width: 42px; height: 8px; border-radius: 999px; }
 .swatch.red{background:var(--red)} .swatch.green{background:var(--green)} .swatch.yellow{background:var(--yellow)} .swatch.blue{background:var(--blue)}
@@ -113,7 +121,7 @@ img { max-width: 100%; display: block; }
 .three-up { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .two-up { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .card { padding: 18px; }
-.card h3, .info-list h3, .source-card h3, .doc-page h3, .person-card h3 { margin: 0 0 8px; font-family: var(--heading); text-transform: uppercase; letter-spacing:.03em; }
+.card h3, .info-list h3, .source-card h3, .doc-page h3, .person-card h3 { margin: 0 0 8px; font-family: var(--body); text-transform: none; letter-spacing:-.01em; font-weight: 700; }
 .card p { margin: 0; }
 .card.accent-red{box-shadow: inset 0 4px 0 var(--red)} .card.accent-blue{box-shadow: inset 0 4px 0 var(--blue)} .card.accent-gold{box-shadow: inset 0 4px 0 var(--yellow)}
 .split { grid-template-columns: 1.05fr .95fr; align-items: start; }
@@ -137,11 +145,13 @@ img { max-width: 100%; display: block; }
 .mosaic-panel { padding: 16px; background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(248,243,235,.88)); }
 .mosaic-caption { display:flex; justify-content:space-between; gap: 12px; align-items: baseline; padding: 12px 4px 0; }
 .brochure-kicker { font-family: var(--heading); text-transform: uppercase; font-size: .95rem; letter-spacing:.12em; color: var(--blue); }
-.highlight { background: linear-gradient(135deg, rgba(15,34,53,.96), rgba(28,116,201,.78)); color:#fff; }
+.highlight { background: linear-gradient(135deg, rgba(15,34,53,.96), rgba(214,59,57,.78)); }
 .highlight .section-head h2, .highlight .section-head p, .highlight .eyebrow { color:#fff; }
 .benefit-strip { display:flex; flex-wrap:wrap; gap: 10px; }
 .benefit-strip span { padding: 11px 15px; border-radius: 999px; background: rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.18); font-weight:700; }
 .contact { margin-top: 22px; display:grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center; padding: 28px; }
+.people-stats { display:flex; flex-wrap:wrap; gap: 10px; margin-top: 16px; }
+.people-stats span { padding: 10px 14px; border-radius: 999px; background: rgba(214,59,57,.1); border:1px solid rgba(214,59,57,.18); color: var(--navy); font-weight: 700; }
 .directory-page { background: linear-gradient(180deg, #faf7f1 0%, var(--paper) 100%); }
 .directory-main { display:grid; gap: 22px; margin-top: 22px; }
 .directory-hero-grid { grid-template-columns: 1fr 360px; align-items: stretch; }
@@ -151,12 +161,17 @@ img { max-width: 100%; display: block; }
 .people-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .person-card { display:grid; grid-template-columns: 96px 1fr; gap: 14px; }
 .person-photo { width: 96px; height: 96px; object-fit: cover; background:#fff; }
+.people-preview { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.people-preview .person-card { grid-template-columns: 76px 1fr; }
+.people-preview .person-photo { width: 76px; height: 76px; }
 .role { margin: 0 0 8px; font-family: var(--heading); text-transform: uppercase; font-size: .9rem; letter-spacing:.03em; color: var(--blue); }
 .directory-hero, .directory-section { position: relative; }
 .directory-hero-grid h1 { max-width: 12ch; }
 .tight { max-width: 760px; }
+.muted-card { padding: 18px; border-radius: 22px; background: rgba(255,255,255,.72); border:1px solid rgba(24,36,49,.08); }
 @media (max-width: 980px) {
   .hero-grid, .split, .contact, .three-up, .two-up, .source-grid, .directory-hero-grid, .people-grid { grid-template-columns: 1fr; }
+  .people-preview { grid-template-columns: 1fr; }
   .feature-grid { grid-template-columns: 1fr; }
   .topbar, .directory-topbar { flex-direction: column; align-items:flex-start; }
   .hero-copy { padding: 28px; }
