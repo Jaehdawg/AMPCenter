@@ -361,6 +361,38 @@ img {
   border: 1px solid rgba(22, 32, 44, 0.08);
 }
 
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.source-card {
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(22, 32, 44, 0.08);
+}
+
+.source-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(22, 32, 44, 0.08);
+  margin-bottom: 12px;
+}
+
+.source-card h3 {
+  margin: 0 0 8px;
+}
+
+.source-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .mosaic-caption {
   display: flex;
   justify-content: space-between;
@@ -432,7 +464,8 @@ img {
   .split,
   .contact,
   .three-up,
-  .two-up {
+  .two-up,
+  .source-grid {
     grid-template-columns: 1fr;
   }
 
