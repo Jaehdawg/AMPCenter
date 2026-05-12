@@ -72,7 +72,7 @@ img { max-width: 100%; display: block; }
   padding: 38px; color: #fff; overflow: hidden;
   background:
     linear-gradient(135deg, rgba(15,34,53,.98), rgba(15,34,53,.88)),
-    radial-gradient(circle at top right, rgba(28,116,201,.5), transparent 40%);
+    radial-gradient(circle at top right, rgba(214,59,57,.5), transparent 40%);
   position: relative;
 }
 .hero-copy::after {
@@ -107,7 +107,7 @@ img { max-width: 100%; display: block; }
 .stats-grid article { padding: 18px; border-radius: 20px; background: linear-gradient(180deg, rgba(244,239,229,.95), rgba(255,255,255,.92)); border:1px solid rgba(24,36,49,.08); }
 .stats-grid strong { display:block; font-family:var(--heading); font-size: 2rem; letter-spacing:.02em; color: var(--navy); }
 .stats-grid span { color: var(--muted); line-height:1.45; }
-.quote-card { margin-top: 12px; padding: 18px; color:#fff; background: linear-gradient(135deg, rgba(15,34,53,.96), rgba(28,116,201,.78)); }
+.quote-card { margin-top: 12px; padding: 18px; color:#fff; background: linear-gradient(135deg, rgba(15,34,53,.96), rgba(214,59,57,.78)); }
 .quote-card p { margin:0 0 8px; font-family: var(--heading); font-size: 1.2rem; text-transform: uppercase; }
 .section-head h2 { line-height: 1.02; }
 .color-ribbon { display:flex; gap: 10px; margin-top: 32px; }
