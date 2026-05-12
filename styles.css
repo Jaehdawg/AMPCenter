@@ -41,14 +41,13 @@ img { max-width: 100%; display: block; }
 }
 .hero, .directory-hero { padding: 22px; }
 .topbar, .directory-topbar {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px;
 }
 .brand {
   display: inline-flex; align-items: center; gap: 12px;
 }
 .brand img {
-  width: 88px; height: 88px; object-fit: contain; padding: 8px; border-radius: 20px;
-  background: rgba(255,255,255,.8); border: 1px solid rgba(24,36,49,.08);
+  width: min(190px, 44vw); height: auto; object-fit: contain;
 }
 .brand strong { display:block; font-size: 1.32rem; letter-spacing:.02em; }
 .brand small { font-size: .88rem; }

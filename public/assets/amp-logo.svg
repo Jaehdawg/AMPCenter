@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+  <title id="title">AMP Center logo</title>
+  <desc id="desc">Alabama Mobility and Power Center wordmark in crimson and dark navy.</desc>
+  <rect width="640" height="180" rx="28" fill="#ffffff"/>
+  <rect x="20" y="20" width="140" height="140" rx="24" fill="#d63b39"/>
+  <path d="M47 128 L67 48 H93 L113 128 H94 L90 107 H70 L65 128 Z M73 88 H87 L80 63 Z M123 128 V48 H143 L165 97 L187 48 H207 V128 H191 V73 L168 128 H157 L135 73 V128 Z" fill="#ffffff"/>
+  <text x="190" y="72" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#0f2235">ALABAMA MOBILITY AND POWER</text>
+  <text x="190" y="112" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="900" letter-spacing="1" fill="#d63b39">CENTER</text>
+  <text x="190" y="146" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#5a6775">The University of Alabama</text>
+</svg>
