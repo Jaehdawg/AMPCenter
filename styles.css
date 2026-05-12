@@ -55,6 +55,8 @@ img { max-width: 100%; display: block; }
 .brand small, .navlinks a, .section-head p, .muted, .caption, .doc-page .source-note { color: var(--muted); }
 .navlinks { display:flex; flex-wrap:wrap; gap: 10px 12px; font-weight: 700; }
 .navlinks a { font-size: .84rem; }
+.text-link { color: var(--red); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.text-link:hover { opacity: .85; }
 .hero-brand {
   margin: 0 0 10px;
   font-family: var(--heading);
